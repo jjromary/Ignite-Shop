@@ -32,14 +32,14 @@ export const ProductDetails = styled("div", {
   flexDirection: "column",
 
   h1: {
-    fontSize: "$2xl",
+    fontSize: "$xxl",
     color: "$gray300",
   },
 
   span: {
     marginTop: "1rem",
     display: "block",
-    fontSize: "$2xl",
+    fontSize: "$xxl",
     color: "$green300",
   },
 
@@ -61,7 +61,12 @@ export const ProductDetails = styled("div", {
     fontWeight: "bold",
     fontSize: "$md",
 
-    "&:hover": {
+    "&:disabled": {
+      opacity: 0.6,
+      cursor: "not-allowed",
+    },
+
+    "&:no(:diisabled):hover": {
       backgroundColor: "$green300",
     },
   },
